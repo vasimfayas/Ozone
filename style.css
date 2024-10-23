@@ -68,3 +68,28 @@ h1 { font-family: Oswald; font-size: 24px; font-style: normal; font-variant: nor
     justify-content: space-around;
     gap: 10%;
 }
+
+.product-container{
+    width: 100%;
+    display: flex;
+    background-color: #b5e9e9;
+    padding: 10%;
+    align-items: center;
+    gap: 10%;
+}
+.product-image{
+    width: 30%;
+    margin-top: 6%;
+    border-radius: 30px;
+}
+
+
+@media(max-width:1727px){
+    .objective-container{
+        flex-direction: column;
+    }
+    .objective-image{
+        width: 50%;
+        margin-bottom: 5%;
+    }
+}
