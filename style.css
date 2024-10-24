@@ -38,7 +38,7 @@ h1 { font-family: Oswald; font-size: 24px; font-style: normal; font-variant: nor
     height: 1215px;
 }
 .building-text {
-    background: linear-gradient(300deg, rgba(31, 39, 46, 0.76), rgba(100, 115, 128, 0.76), rgba(200, 115, 128, 0.76)); 
+    background-color: #e72d07;
     background-size: 180% 180%; /* Allows the gradient to move */
     background-position: 0% 50%; /* Initial position of the gradient */
     border-radius: 8px;
@@ -46,7 +46,6 @@ h1 { font-family: Oswald; font-size: 24px; font-style: normal; font-variant: nor
     margin-left: 8%;
     width: 35%;
     color: aliceblue;
-    animation: gradient-animation 5s ease infinite; /* Continuous gradient animation */
 }
 
 @keyframes gradient-animation {
@@ -68,6 +67,12 @@ h1 { font-family: Oswald; font-size: 24px; font-style: normal; font-variant: nor
     justify-content: space-around;
     gap: 10%;
 }
+.objective-text{
+    background-color: #e72d07;
+    color: white;
+    padding: 2%;
+    border-radius: 8px;
+}
 
 .product-container{
     width: 100%;
@@ -85,11 +90,18 @@ h1 { font-family: Oswald; font-size: 24px; font-style: normal; font-variant: nor
 
 
 @media(max-width:1727px){
+    h1 {
+        font-size: 2em; /* Smaller for mobile phones */
+    }
+    h3 {
+        font-size: 1.5em; /* Smaller for mobile phones */
+    }
     .building-text{
-        width: 100%;
+        width: 70%;
     }
     .objective-container{
         flex-direction: column;
+        align-items: center;
     }
     .objective-image{
         width: 50%;
@@ -102,10 +114,29 @@ h1 { font-family: Oswald; font-size: 24px; font-style: normal; font-variant: nor
         margin-left: 0; /* Ensure there's no excessive margin */
     }
     .objective-container {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column;
+        align-items: center; /* Stack items vertically */
     }
     .objective-image {
         width: 100%; /* Take full width on smaller screens */
         margin-bottom: 5%; /* Add space between elements */
     }
+}
+
+
+.ml12 {
+    position: relative;
+    font-weight: 900;
+    font-size: 5em; /* Adjust size as needed */
+}
+
+.ml12 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.ml12 .letter {
+    display: inline-block;
+    line-height: 1em;
 }
