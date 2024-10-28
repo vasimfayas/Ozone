@@ -98,7 +98,7 @@ h1 { font-family: Oswald; font-size: 24px; font-style: normal; font-variant: nor
         height: 135vh;
     }
     .building-text{
-        width: 70%;
+        width: 30%;
     }
     
     .objective-image{
@@ -107,6 +107,21 @@ h1 { font-family: Oswald; font-size: 24px; font-style: normal; font-variant: nor
     }
 }
 @media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em; /* Smaller for mobile phones */
+    }
+    h3 {
+        font-size: 1em; /* Smaller for mobile phones */
+    }
+    p {
+        font-size: 16px;
+    }
+    .ml12 {
+        font-size: 3em !important; /* Adjust size as needed */
+    }
+    .building{
+        height: 48vh;
+    }
     .building-text {width: 47%;
         margin-left: 2%;/* Ensure there's no excessive margin */
     }
