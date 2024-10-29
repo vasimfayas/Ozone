@@ -38,9 +38,9 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
 
-    // Close menu when clicking a menu item
-    navTitle.addEventListener("click", function () {
-      navTitle.style.display = "none";
-    });
+    // // // Close menu when clicking a menu item
+    // navTitle.addEventListener("click", function () {
+    //   navTitle.style.display = "none";
+    // });
   }
 });
