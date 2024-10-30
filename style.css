@@ -222,6 +222,13 @@ icon style */
         margin-bottom: 5%; /* Add space between elements */
         padding: 3% !important;
     }
+    .product-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .product-image{
+        width: 90%;
+    }
     .footer-container{
         display: flex;
         flex-direction: column-reverse;
