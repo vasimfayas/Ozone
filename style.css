@@ -108,7 +108,31 @@ h1 { font-family: Oswald; font-size: 24px; font-style: normal; font-variant: nor
     margin-top: 6%;
     border-radius: 30px;
 }
+.footer-container{
+    background-image: url(./asset/footer.png);
+    width: 100%;
+    
+    justify-content: space-evenly;
+    display: flex;
 
+}
+/* 
+icon style */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-instagram {
+    background: #c21e88;
+    color: white;
+  }
 
 @media(max-width:1727px){
     h1 {
@@ -134,7 +158,7 @@ h1 { font-family: Oswald; font-size: 24px; font-style: normal; font-variant: nor
         font-size: 1.5em; /* Smaller for mobile phones */
     }
     h3 {
-        font-size: 1em; /* Smaller for mobile phones */
+        font-size: 1.3em; /* Smaller for mobile phones */
     }
     p {
         font-size: 16px;
@@ -165,7 +189,7 @@ h1 { font-family: Oswald; font-size: 24px; font-style: normal; font-variant: nor
     /* Style the menu toggle button */
     .menu-icon {
         display: block;
-        font-size: 30px;
+        font-size: 20px;
         cursor: pointer;
         color: white;
         background: none;
@@ -197,6 +221,14 @@ h1 { font-family: Oswald; font-size: 24px; font-style: normal; font-variant: nor
         width: 100%; /* Take full width on smaller screens */
         margin-bottom: 5%; /* Add space between elements */
         padding: 3% !important;
+    }
+    .footer-container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .footer-img{
+        width: 100%;
     }
 }
 
